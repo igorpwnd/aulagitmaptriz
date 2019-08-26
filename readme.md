@@ -6,7 +6,7 @@ Lista todas as branches que existem no seu repositório local e marca em qual vo
 
 ```git branch```
 
-![Uepa](images/branch.jpg "Lista de Branches")
+![](images/branch.jpg "Lista de Branches")
 
 -------
 
@@ -84,7 +84,7 @@ Para fazer com que o **viaje** até este commit é possível utilizar 2 comandos
 \
 Resumidamente o hard vai até o código com ele commitado e o soft vai até o codigo, sem commit.
 
-![Uepa](images/log.jpg "Log de históricos")
+![](images/log.jpg "Log de históricos")
 
 
 ```git reset --hard id_do_commit```
@@ -127,3 +127,21 @@ Após terminar sua tarefa (e fazer o commit), você percebe que esqueceu de remo
 Ficarão 2 commits no seu push para o repositório, o commit da tarefa finalizada e o commit da remoção do console.log, um commit adicional como esse não é necessário e pode ser até não estético, nesse caso pode-se fazer o ***squash***.
 
 ```git rebase -i```
+
+Mostrará as opções para fazer o **squash**, **pick** será o commit mantido e **squash** será combinado com o **pick** mais perto. (**É NECESSÁRIO TER SEMPRE UM PICK ACIMA**)
+![](images/squash_1.jpg "Log de históricos")
+
+Alterne de ***pick*** para ***squash***
+
+![](images/squash_2.jpg "Log de históricos")
+
+Depois comente, remova ou faça o que quiser com os comentário de cada ***commit***
+
+![](images/squash_3.jpg "Log de históricos")
+
+*Vale ressaltar que todas essas modificações são todas dentro do terminal no VIM, que é aberto automaticamente.*
+
+Caso queria conferir como o seu ***commit*** ficou é só rodar \
+```git log```\
+
+Lá estão todos os seus ***commits*** com suas mensagens.
