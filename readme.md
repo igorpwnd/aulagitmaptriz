@@ -141,7 +141,7 @@ Depois comente, remova ou faça o que quiser com os comentário de cada ***commi
 
 *Vale ressaltar que todas essas modificações são todas dentro do terminal no VIM, que é aberto automaticamente.*
 
-Caso queria conferir como o seu ***commit*** ficou é só rodar \
-```git log```\
+Caso queria conferir como o seu ***commit*** ficou é só rodar. \
+```git log```
 
-Lá estão todos os seus ***commits*** com suas mensagens.
+Lá estão todos os seus ***commits*** com suas mensagens, caso o git esteja alegando algum problema para fazer o push, insira --force como seu sufixo.
